@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xsd:element name="rapport">
+       <xsd:complexType>
+           <xsd:sequence>
+               <xsd:element name="mandat" minOccurs="1" maxOccurs="3" type="type_mandat"></xsd:element>
+           </xsd:sequence>
+       </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:complexType name="type_mandat">
+        <xsd:sequence>
+            <xsd:element name="expediteur" type="type_EX_De"></xsd:element>
+            <xsd:element name="destinataire" type="type_EX_De"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="num" type="xsd:integer" use="required"></xsd:attribute>
+        <xsd:attribute name="date" type="xsd:date" use="required"></xsd:attribute>
+        <xsd:attribute name="mantant" use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:double">
+                    <xsd:minExclusive value="50"></xsd:minExclusive>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="etat" use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="recu"></xsd:enumeration>
+                    <xsd:enumeration value="non recu"></xsd:enumeration>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:complexType name="type_EX_De">
+        <xsd:attribute name="cin" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="nom" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="prenom" type="xsd:string" use="required"></xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

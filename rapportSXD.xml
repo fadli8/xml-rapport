@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rapport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/fadli/Desktop/formation%20enset/Master%20IIDBCC/xml/rapport/rapport.xsd">
+    <mandat num="1" date="2022-12-12" mantant="5000.00" etat="recu">
+        <expediteur cin="T258150" nom="fadli" prenom="ayman"/>
+        <destinataire cin="T258147" nom="fadli" prenom="hamza"/>
+    </mandat>
+</rapport>

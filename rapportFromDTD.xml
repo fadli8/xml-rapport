@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rapport SYSTEM "file:/C:/Users/fadli/Desktop/formation%20enset/Master%20IIDBCC/xml/rapport/rapport.dtd">
+<rapport>
+    <mandat>
+        <expediteur cin="T258150" nom="fadli" prenom="ayman"/>
+        <destinataire cin="T154785" nom="fadli" prenom="hamza"/>
+    </mandat>
+</rapport>
